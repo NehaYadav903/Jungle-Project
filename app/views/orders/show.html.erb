@@ -17,7 +17,12 @@
       </thead>
       <tbody>
         <% @order.line_items.each do |item| %>
-          <%= render 'line_item', product: item[:product], quantity: item[:quantity].to_i, price: item[:item_price_cents].to_i, name: item.product.name, image: item.product.image, description: item.product.description%>
+          <%= render 'line_item', product: item[:product],
+              quantity: item[:quantity].to_i,
+              price: item[:item_price_cents].to_i,
+              name: item.product.name,
+              image: item.product.image,
+              description: item.product.description%>
         <% end %>
       </tbody>
     </table>
