@@ -6,15 +6,14 @@
      </header>
    
      <div class="center-block jumbotron">
-         <div class="alert alert-warning">
-         <strong>Warning!</strong> Uh oh! Looks like you don’t have anything in your bag yet!
-    </div>
-   
+
      <% if(enhanced_cart.length == 0) %>
-         <%= link_to "Add something to your cart", "http://localhost:3000",
-             class: 'btn btn-lg btn-primary btn-sm' %>
-     </div>
-   
+     <div class="alert alert-warning">
+              <strong>Warning!</strong> Uh oh! Looks like you don’t have anything in your bag yet!
+              </div>
+              <%= link_to "Add something to your cart", "http://localhost:3000",
+              class: 'btn btn-lg btn-primary btn-sm' %>
+             
      <% else %>  
      <div class="panel panel-default items">
        <table class="table table-bordered">
