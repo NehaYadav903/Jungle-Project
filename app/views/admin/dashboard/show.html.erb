@@ -1,10 +1,16 @@
-<h1>Admin Dashboard</h1>
-<br>
+<section class="admin-dashboard">
+
+  <header class="page-header">
+    <h1>Admin &raquo; Dashboard</h1>
+  </header>
 
 <table class="table table-hover table-bordered">
-
   <thead>
-      <th>Dashboard Counts</th>
+  <tr>
+      <th colspan="2">
+      <h2>Dashboard Counts</h2>
+      </th>
+  </tr>
   </thead>
   <tr>
       <th>Total number of categories</th>
@@ -15,3 +21,5 @@
       <td><a href="/admin/products"><%= @product.length %></a></td>
     </tr>
 </table>
+
+</section>
